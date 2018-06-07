@@ -16,3 +16,9 @@ git checkout -b simple_akka_stream master
 libraryDependencies += "com.typesafe.akka" %% "akka-stream" % "2.5.12"
 ````    
 - Create a file:<b>com.github.janikibichi.learnakka.streams.SimpleStreamsApp.scala</b>
+- Create two files: testfile2.txt and testfile3.txt and add a string to testfile3.txt
+- Run [the App](https://asciinema.org/a/EF4w7zfNVxXq3EzP08OeGDbe7): 
+````
+sbt "runMain com.github.janikibichi.learnakka.streams.SimpleStreamsApp"
+````
+ 
