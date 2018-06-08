@@ -5,7 +5,6 @@ A Stream is a set of components with different responsibilities. It includes the
 - Sink: Exit point to the stream.
 - Flow: Manipulating the stream
 
-
 <br><br>
 - Branch out to create a simple Akka Stream 
 ````
