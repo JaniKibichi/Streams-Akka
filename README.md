@@ -1,4 +1,4 @@
-#Akka Streams
+# Akka Streams
 Akka Streams Model is built on top of Akka to make ingestion of streams easy.
 A Stream is a set of components with different responsibilities. It includes the following:
 - Source: And entry point to the stream.
