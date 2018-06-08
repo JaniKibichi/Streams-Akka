@@ -21,4 +21,10 @@ libraryDependencies += "com.typesafe.akka" %% "akka-stream" % "2.5.12"
 ````
 sbt "runMain com.github.janikibichi.learnakka.streams.SimpleStreamsApp"
 ````
+<br><br>
+- Branch out to create a transform and consume stream
+````
+git checkout -b transform_consume_streams simple_akka_stream 
+
+````
  
