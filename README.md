@@ -21,4 +21,26 @@ libraryDependencies += "com.typesafe.akka" %% "akka-stream" % "2.5.12"
 ````
 sbt "runMain com.github.janikibichi.learnakka.streams.SimpleStreamsApp"
 ````
- 
+<br><br>
+- Branch out to create a transform and consume stream
+````
+git checkout -b transform_consume_streams simple_akka_stream 
+
+````
+- Create a resource in src/main/resources; gzipped-file.txt, fill with text and gzip it
+- Create file: <b>com.github.janikibichi.learnakka.streams.TransformingStreamsApp.scala</b>
+- [Run the App:](https://asciinema.org/a/ORtz1GvYAGwLUrBYo6hEi1kuD)
+````
+sbt "runMain com.github.janikibichi.learnakka.streams.TransformingStreamsApp"
+````
+<br><br>
+- Branch out to create a modularizing stream app
+````
+git checkout -b modularizing_stream_app transform_consume_streams
+````
+- Use resource file: src/main/resources/gzipped-file.txt.gz
+- Create a file: <b>com.github.janikibichi.learnakka.streams.ModularizingStreamsApp.scala</b>
+- [Run the App:](https://asciinema.org/a/88UssGhUkevST3VRSRRF2WX5e)
+````
+sbt "runMain com.github.janikibichi.learnakka.streams.ModularizingStreamsApp"
+````

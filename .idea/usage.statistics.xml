@@ -4,28 +4,28 @@
     <session id="-895861069">
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="md" value="200" />
-          <entry key="scala" value="22" />
-          <entry key="txt" value="26" />
+          <entry key="md" value="668" />
+          <entry key="scala" value="124" />
+          <entry key="txt" value="66" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Markdown" value="200" />
-          <entry key="PLAIN_TEXT" value="26" />
-          <entry key="Scala" value="22" />
+          <entry key="Markdown" value="668" />
+          <entry key="PLAIN_TEXT" value="66" />
+          <entry key="Scala" value="124" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="scala" value="1" />
-          <entry key="txt" value="3" />
+          <entry key="scala" value="3" />
+          <entry key="txt" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="PLAIN_TEXT" value="3" />
-          <entry key="Scala" value="1" />
+          <entry key="PLAIN_TEXT" value="5" />
+          <entry key="Scala" value="3" />
         </counts>
       </usages-collector>
     </session>
