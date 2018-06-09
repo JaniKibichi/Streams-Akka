@@ -90,3 +90,17 @@ sbt "runMain com.github.janikibichi.learnakka.streams.ParallelizingApp"
 ````
 git checkout -b streaming_io pipelining_parallelizing 
 ````
+- Create file: <b>com.github.janikibichi.learnakka.streams.WorkingIOStreamsApp.scala</b>
+- Run the [WorkingIOStreamsApp]() and Use netcat to push a stream to the TCP Server
+````
+sbt "runMain com.github.janikibichi.learnakka.streams.WorkingIOStreamsApp"
+````
+- On a [different terminal:]()
+````
+echo -n "A very very repetitive message to count words" | netcat 127.0.0.1 1234
+````
+<br><br>
+- Branch out to explore streams and actors
+````
+git checkout -b streams_and_actors streaming_io 
+````
