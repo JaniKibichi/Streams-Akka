@@ -44,3 +44,15 @@ git checkout -b modularizing_stream_app transform_consume_streams
 ````
 sbt "runMain com.github.janikibichi.learnakka.streams.ModularizingStreamsApp"
 ````
+<br><br>
+- Branch out to explore custom streams
+````
+git checkout -b explore_custom_streams modularizing_stream_app
+````
+- Create file: <b>com.github.janikibichi.learnakka.streams.HelloAkkaStreamsApp.scala</b>
+- Create file: <b>com.github.janikibichi.learnakka.streams.WordCounterSink.scala</b>
+- Create file: <b>com.github.janikibichi.learnakka.streams.CustomStagesApp.scala</b>
+- [Run the App:](https://asciinema.org/a/Pv5vZJo4GkQahyWJByL6Vm2pY)
+````
+sbt "runMain com.github.janikibichi.learnakka.streams.CustomStagesApp"
+````
