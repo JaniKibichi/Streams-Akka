@@ -56,3 +56,9 @@ git checkout -b explore_custom_streams modularizing_stream_app
 ````
 sbt "runMain com.github.janikibichi.learnakka.streams.CustomStagesApp"
 ````
+
+<br><br>
+- Branch out to explore error handling in Akka streams
+````
+git checkout -b error_handling_streams explore_custom_streams 
+````

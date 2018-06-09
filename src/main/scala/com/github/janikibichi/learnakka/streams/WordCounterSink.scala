@@ -7,8 +7,10 @@ import scala.concurrent.duration._
 class WordCounterSink extends GraphStage[SinkShape[String]]{
   val in: Inlet[String] = Inlet("WordCounterSink")
   override val shape: SinkShape[String] = SinkShape(in)
+
   override def createLogic(InteritedAttributes: Attributes): GraphStageLogic = new TimerGraphStageLogic(shape){
     var counts = Map.empty[String,Int].withDefaultValue(0)
+
     override def preStart(): Unit = {
       schedulePeriodically(None, 5 seconds)
       pull(in)
