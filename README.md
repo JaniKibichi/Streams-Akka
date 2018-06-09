@@ -56,9 +56,37 @@ git checkout -b explore_custom_streams modularizing_stream_app
 ````
 sbt "runMain com.github.janikibichi.learnakka.streams.CustomStagesApp"
 ````
-
 <br><br>
 - Branch out to explore error handling in Akka streams
 ````
 git checkout -b error_handling_streams explore_custom_streams 
+````
+- Create file: <b>com.github.janikibichi.learnakka.streams.HandlingErrorApp.scala</b>
+- [Run the App:](https://asciinema.org/a/J7pIe3P8b1ChRcVx9BrsuqNxj)
+````
+sbt "runMain com.github.janikibichi.learnakka.streams.HandlingErrorApp"
+````
+<br><br>
+-  Branch out to explore parallelizing and pipelining streams
+````
+git checkout -b pipelining_parallelizing error_handling_streams
+````
+- Create file: <b>com.github.janikibichi.learnakka.streams.PipeliningParallelizing.scala</b>
+- Create file: <b>com.github.janikibichi.learnakka.streams.PipeliningParallelizingApp.scala</b>
+- Run the [synchronous pipelining app:](https://asciinema.org/a/IvHLrehI2l5E7XJCdl6Peb6oo)
+````
+sbt "runMain com.github.janikibichi.learnakka.streams.SynchronousPipeliningApp"
+````
+- Run the [asynchronous pipelining app:](https://asciinema.org/a/moIpj9PxpaaCgRco4OLTDLx6J)
+````
+sbt "runMain com.github.janikibichi.learnakka.streams.AsynchronousPipeliningApp"
+````
+- Run the [parallelizing app](https://asciinema.org/a/cRVrubTdIPfEPXiuwjbV5IRRb)
+````
+sbt "runMain com.github.janikibichi.learnakka.streams.ParallelizingApp"
+````
+<br><br>
+- Branch out to explore streaming i/o
+````
+git checkout -b streaming_io pipelining_parallelizing 
 ````
