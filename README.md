@@ -135,6 +135,11 @@ $ sudo docker logs stream-rabbitmq
 - Run [the container](https://asciinema.org/a/LjYo95LS42Usdb1mDJ0z7y9nk)
 - Add the AMQP dependency from Alpakka to build.sbt
 ````
-libraryDependencies += "com.lightbend.akka" %% "akka-stream-alpakka-amqp" % "0.19"
+libraryDependencies += "com.lightbend.akka" %% "akka-stream-alpakka-amqp" % "0.6"
 ````
 - Create a file: <b>com.github.janikibichi.learnakka.streams.ProcessingRabbitMQApp.scala</b>
+- Run [the application](https://asciinema.org/a/KpxlwvYlVAnz6QaOl24Mv8K69)
+````
+sbt "runMain com.github.janikibichi.learnakka.streams.ProcessingRabbitMQApp"
+````
+

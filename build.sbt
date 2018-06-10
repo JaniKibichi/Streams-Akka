@@ -18,4 +18,4 @@ libraryDependencies += "com.typesafe.akka" %% "akka-cluster-sharding" % "2.5.12"
 
 libraryDependencies += "com.typesafe.akka" %% "akka-distributed-data" % "2.5.12"
 
-libraryDependencies += "com.lightbend.akka" %% "akka-stream-alpakka-amqp" % "0.19"
+libraryDependencies += "com.lightbend.akka" %% "akka-stream-alpakka-amqp" % "0.6"
