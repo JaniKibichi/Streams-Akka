@@ -104,3 +104,10 @@ echo -n "A very very repetitive message to count words" | netcat 127.0.0.1 1234
 ````
 git checkout -b streams_and_actors streaming_io 
 ````
+- Create file: <b>com.github.janikibichi.learnakka.streams.StringCleanerActor.scala</b>
+- Create file: <b>com.github.janikibichi.learnakka.streams.SourceActor.scala</b>
+- Create file: <b>com.github.janikibichi.learnakka.streams.IntegrateActorApp.scala</b>
+- Run the [IntegrateWithActors App](https://asciinema.org/a/SJCMRE2clgUKXF3U7a1Fv72ab)
+````
+sbt "runMain com.github.janikibichi.learnakka.streams.IntegrateActorApp"
+````
