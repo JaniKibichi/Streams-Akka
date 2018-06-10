@@ -142,4 +142,19 @@ libraryDependencies += "com.lightbend.akka" %% "akka-stream-alpakka-amqp" % "0.6
 ````
 sbt "runMain com.github.janikibichi.learnakka.streams.ProcessingRabbitMQApp"
 ````
+<br><br>
+- Branch out explore Streams and Kafka
+````
+git checkout -b streams_and_kafka streams_and_rabbitmq
+````
+- Set Up a [docker kafka container.](https://hub.docker.com/r/spotify/kafka/)
+````
+$ sudo docker pull spotify/kafka
+
+````
+- Add the required dependency for Apache Kafka in build.sbt
+````
+libraryDependencies += "com.typesafe.akka" %% "akka-stream-kafka" % "0.13"
+````
+- Create a file: <b>com.github.janikibichi.learnakka.streams.ProcessingKafkaApp.scala</b>
 

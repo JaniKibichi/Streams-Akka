@@ -4,7 +4,7 @@
     <session id="-895861069">
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="md" value="2125" />
+          <entry key="md" value="2323" />
           <entry key="sbt" value="2" />
           <entry key="scala" value="867" />
           <entry key="txt" value="66" />
@@ -12,7 +12,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Markdown" value="2125" />
+          <entry key="Markdown" value="2323" />
           <entry key="PLAIN_TEXT" value="66" />
           <entry key="Scala" value="867" />
           <entry key="sbt" value="2" />
