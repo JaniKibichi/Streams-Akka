@@ -18,9 +18,7 @@ object WorkingIOStreamsApp extends App{
 
   val wordCount = Flow[ByteString].map(_.utf8String.toUpperCase)
     .mapConcat(_.split(" ").toList)
-    .collect { case w if w.nonEmpty =>
-      w.replaceAll("""[p{Punct}&&[^.]]""","").replaceAll(System.lineSeparator(),"")
-    }
+    .collect { case w if w.nonEmpty => w.replaceAll("""[p{Punct}&&[^.]]""","").replaceAll(System.lineSeparator(),"")}
     .groupBy(MaxGroups, identity)
     .map(_ -> 1)
     .reduce((l,r) => (l._1,l._2+r._2))
