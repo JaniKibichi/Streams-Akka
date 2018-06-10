@@ -2,8 +2,10 @@ package com.github.janikibichi.learnakka.streams
 
 import akka.actor.ActorSystem
 import akka.stream.ActorMaterializer
-import akka.stream.scaladsl.{Flow, Tcp}
+import akka.stream.scaladsl.Tcp.{IncomingConnection,ServerBinding}
+import akka.stream.scaladsl._
 import akka.util.ByteString
+import scala.concurrent.Future
 
 object WorkingIOStreamsApp extends App{
   implicit val actorSystem = ActorSystem("WorkingIOStreams")
@@ -12,13 +14,12 @@ object WorkingIOStreamsApp extends App{
   val MaxGroups = 1000
 
   val connections = Tcp().bind("127.0.0.1", 1234)
-  connections.runForeach(connection => connection.handleWith(wordCount))
+      connections.runForeach(connection => connection.handleWith(wordCount))
 
   val wordCount = Flow[ByteString].map(_.utf8String.toUpperCase)
     .mapConcat(_.split(" ").toList)
     .collect { case w if w.nonEmpty =>
-      w.replaceAll("""[p{Punct}&&[^.]]""","")
-        .replaceAll(System.lineSeparator(),"")
+      w.replaceAll("""[p{Punct}&&[^.]]""","").replaceAll(System.lineSeparator(),"")
     }
     .groupBy(MaxGroups, identity)
     .map(_ -> 1)

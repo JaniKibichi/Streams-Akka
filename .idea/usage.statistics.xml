@@ -5,7 +5,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="md" value="1771" />
-          <entry key="scala" value="425" />
+          <entry key="scala" value="458" />
           <entry key="txt" value="66" />
         </counts>
       </usages-collector>
@@ -13,19 +13,19 @@
         <counts>
           <entry key="Markdown" value="1771" />
           <entry key="PLAIN_TEXT" value="66" />
-          <entry key="Scala" value="425" />
+          <entry key="Scala" value="458" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="scala" value="10" />
+          <entry key="scala" value="11" />
           <entry key="txt" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="PLAIN_TEXT" value="5" />
-          <entry key="Scala" value="10" />
+          <entry key="Scala" value="11" />
         </counts>
       </usages-collector>
     </session>
