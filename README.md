@@ -4,7 +4,6 @@ A Stream is a set of components with different responsibilities. It includes the
 - Source: And entry point to the stream.
 - Sink: Exit point to the stream.
 - Flow: Manipulating the stream
-
 <br><br>
 - Branch out to create a simple Akka Stream 
 ````
@@ -122,3 +121,9 @@ git checkout -b working_with_graphs streams_and_actors
 ````
 sbt "runMain com.github.janikibichi.learnakka.streams.WorkingWithGraphsApp"
 ````
+<br><br>
+- Branch out to explore working with RabbitMQ and streams
+````
+git checkout -b streams_and_rabbitmq working_with_graphs
+````
+- Run a [docker rabbitMQ container.](https://hub.docker.com/_/rabbitmq/)
