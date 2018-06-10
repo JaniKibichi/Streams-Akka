@@ -126,4 +126,15 @@ sbt "runMain com.github.janikibichi.learnakka.streams.WorkingWithGraphsApp"
 ````
 git checkout -b streams_and_rabbitmq working_with_graphs
 ````
-- Run a [docker rabbitMQ container.](https://hub.docker.com/_/rabbitmq/)
+- Set Up a [docker rabbitMQ container.](https://hub.docker.com/_/rabbitmq/)
+````
+$ sudo docker pull rabbitmq
+$ sudo docker run -p 5672:5672 --name stream-rabbitmq -d rabbitmq:latest
+$ sudo docker logs stream-rabbitmq
+````
+- Run [the container](https://asciinema.org/a/LjYo95LS42Usdb1mDJ0z7y9nk)
+- Add the AMQP dependency from Alpakka to build.sbt
+````
+libraryDependencies += "com.lightbend.akka" %% "akka-stream-alpakka-amqp" % "0.19"
+````
+- Create a file: <b>com.github.janikibichi.learnakka.streams.ProcessingRabbitMQApp.scala</b>
