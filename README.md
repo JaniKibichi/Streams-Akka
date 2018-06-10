@@ -111,3 +111,14 @@ git checkout -b streams_and_actors streaming_io
 ````
 sbt "runMain com.github.janikibichi.learnakka.streams.IntegrateActorApp"
 ````
+<br><br>
+- Branch out to explore working with graphs
+````
+git checkout -b working_with_graphs streams_and_actors
+````
+- Create file: <b>com.github.janikibichi.learnakka.streams.StatefulCounterFlow.scala</b>
+- Create file: <b>com.github.janikibichi.learnakka.streams.WorkingWithGraphs.scala</b>
+- Run [the App](https://asciinema.org/a/iffde1NdmHrRbiaafUc4PyE2s)
+````
+sbt "runMain com.github.janikibichi.learnakka.streams.WorkingWithGraphsApp"
+````
