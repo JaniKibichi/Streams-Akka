@@ -150,11 +150,17 @@ git checkout -b streams_and_kafka streams_and_rabbitmq
 - Set Up a [docker kafka container.](https://hub.docker.com/r/spotify/kafka/)
 ````
 $ sudo docker pull spotify/kafka
-
+$ sudo docker run -p 2181:2181 -p 9092:9092 --name stream-kafka --env ADVERTISED_PORT=9092 -d spotify/kafka
+$ sudo docker logs stream-kafka
 ````
 - Add the required dependency for Apache Kafka in build.sbt
 ````
 libraryDependencies += "com.typesafe.akka" %% "akka-stream-kafka" % "0.13"
 ````
 - Create a file: <b>com.github.janikibichi.learnakka.streams.ProcessingKafkaApp.scala</b>
+
+- Run the [Kafka streams App]()
+````
+sbt "runMain com.github.janikibichi.learnakka.streams.ProcessingKafkaApp"
+````
 

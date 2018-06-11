@@ -4,32 +4,32 @@
     <session id="-895861069">
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="md" value="2323" />
-          <entry key="sbt" value="2" />
-          <entry key="scala" value="867" />
+          <entry key="md" value="2423" />
+          <entry key="sbt" value="4" />
+          <entry key="scala" value="898" />
           <entry key="txt" value="66" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Markdown" value="2323" />
+          <entry key="Markdown" value="2423" />
           <entry key="PLAIN_TEXT" value="66" />
-          <entry key="Scala" value="867" />
-          <entry key="sbt" value="2" />
+          <entry key="Scala" value="898" />
+          <entry key="sbt" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="sbt" value="1" />
-          <entry key="scala" value="17" />
+          <entry key="sbt" value="2" />
+          <entry key="scala" value="18" />
           <entry key="txt" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="PLAIN_TEXT" value="5" />
-          <entry key="Scala" value="17" />
-          <entry key="sbt" value="1" />
+          <entry key="Scala" value="18" />
+          <entry key="sbt" value="2" />
         </counts>
       </usages-collector>
     </session>
