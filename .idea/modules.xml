@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/streams.iml" filepath="$PROJECT_DIR$/.idea/modules/streams.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Streams-Akka.iml" filepath="$PROJECT_DIR$/.idea/modules/Streams-Akka.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/streams-build.iml" filepath="$PROJECT_DIR$/.idea/modules/streams-build.iml" />
     </modules>
   </component>
